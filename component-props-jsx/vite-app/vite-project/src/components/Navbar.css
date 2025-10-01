@@ -1,0 +1,18 @@
+nav{
+    margin:20px auto;
+   padding: 24px;
+    background-color: #0d4524;
+    border-radius: 20px;
+    width: 70vw;
+}
+nav, ul{
+    display: flex;
+}
+
+li{
+    color: white;
+    list-style: none;
+}
+ul{
+    gap: 34px;
+}

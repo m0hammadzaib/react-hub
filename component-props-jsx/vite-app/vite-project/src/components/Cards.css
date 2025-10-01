@@ -1,0 +1,13 @@
+.card{
+    /* background-image: url(https://pbs.twimg.com/media/C2XlNefUcAAxhn4?format=jpg&name=4096x4096); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
