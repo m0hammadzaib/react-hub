@@ -1,11 +1,19 @@
 import React from 'react'
+import { useState,useEffect } from 'react'
 
 const Todo = () => {
+  const [todos, settodos] = useState([]);
+  const [task, settask] = useState("");
+  
   return (
     <ul>
-      <li className="bg-blue-200 mt-5 text-left p-3" ><input type="checkbox" />Drink Water</li>
-      <li className="bg-blue-200 mt-5 text-left p-3" ><input type="checkbox" />300 Pushups</li>
-      <li className="bg-blue-200 mt-5 text-left p-3" ><input type="checkbox" />Meditation</li>
+      {todos.map((t,i)=>(
+        <li key={i} >
+          <input type="text" checked={t.completed} onChange={()=>toggletodo(i)} />
+          <span className={t.completed? "line-through text-gray-400":""} >{t.text}</span>
+          <button onClick={()=>deletetodo(i)} ></button>
+        </li>
+      ))}
     </ul>
   )
 }
