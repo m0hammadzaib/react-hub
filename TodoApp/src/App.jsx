@@ -43,7 +43,7 @@ function App() {
     </div>
     <hr className="mb-7 border-blue-200" />
     {/* Todo list container */}
-    <div className="space-y-5 flex-1 overflow-y-auto over pr-2 max-h-[360px]">
+    <div className="space-y-5 flex-1 overflow-y-auto pr-2 max-h-[360px]">
       {todos.map((t, i) => (
         <div
           key={i}
